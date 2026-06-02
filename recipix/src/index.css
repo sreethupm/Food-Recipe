@@ -1,26 +1,13 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-@theme {
-  --font-sans: 'Outfit', sans-serif;
-  --font-serif: 'Playfair Display', serif;
-  
-  --color-sage-light: #E2ECE9;
-  --color-sage-medium: #8FA89B;
-  --color-sage-dark: #5F7D6D;
-  --color-charcoal-dark: #2C2C2A;
-  --color-charcoal-medium: #3D3D3A;
-  --color-charcoal-light: #7E7E7A;
-  --color-white-pure: #FFFFFF;
-  --color-white-warm: #FBFBF9;
-}
-
 @layer base {
   body {
-    background-color: var(--color-white-warm);
-    color: var(--color-charcoal-dark);
-    font-family: var(--font-sans);
+    @apply bg-white-warm text-charcoal-dark antialiased;
+    font-family: 'Outfit', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
